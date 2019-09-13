@@ -134,7 +134,7 @@ end
 mdcData.dataPoints = dataPoints;
 mdcData.label = dataPointsLabel;
 
-dataOut = streamgen(mdcData, streamConfig);
+dataOut = mdcstream(mdcData, streamConfig);
 
 configOut = {mdcConfig; streamConfig};
 
