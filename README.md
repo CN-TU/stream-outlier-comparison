@@ -32,12 +32,12 @@ Datasets are stored in [mdcstream-wrapper/dataRoot]
 
 1. Go to [moa-wrapper]
 2. From the terminal, execute:
-> $ java -jar outlier-detector.jar config.xml
+> java -jar outlier-detector.jar config.xml
     
 By default, results are stored in [mdcstream-wrapper/results]
     
 The previous command tests all algorithms together with all datasets. To obtain results and time performances separately, use instead:
-> $ time java -jar outlier-detector.jar config????.xml 
+> time java -jar outlier-detector.jar config????.xml 
 
 where "????" stands for the specific algorithm ("MCOD", "SimpleCOD", "AbstractC", "ExactStorm", and "AproxStorm")
 
@@ -45,4 +45,4 @@ where "????" stands for the specific algorithm ("MCOD", "SimpleCOD", "AbstractC"
 
 1. Go to [py_metrics]
 2. From the terminal, execute: 
-> $ python3 extract_performances.py
+> python3 extract_performances.py
