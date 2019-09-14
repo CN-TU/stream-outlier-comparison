@@ -19,7 +19,7 @@
 		</algorithm>
 
 		<algorithm id="abstractC">
-			<k>10</k
+			<k>10</k>
 			<radius>0.5</radius>
 			<windowSize>1000</windowSize>
 		</algorithm>
