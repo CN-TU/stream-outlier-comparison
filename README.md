@@ -17,33 +17,32 @@ From the stream-outlier-comparison directory run the installMDC.sh script to dow
 
 ## Reproduce experiments
 
-###Creating datasets
+**Creating datasets**
 
 1. Open MATLAB
 2. Include the folders containing MDCGen and MDCStream in the MATLAB path (with subfolders).
 3. In the MATLAB environment, go to [mdcstream-wrapper]
 4. To generate the used datasets, run: 
-> > experiments_Sep2019
+> experiments_Sep2019
 
-	Datasets are stored in [mdcstream-wrapper/dataRoot]
+Datasets are stored in [mdcstream-wrapper/dataRoot]
 
 
-###Executing MOA stream out-det algorithms
+**Executing MOA stream out-det algorithms**
 
 1. Go to [moa-wrapper]
 2. From the terminal, execute:
 > $ java -jar outlier-detector.jar config.xml
     
-	By default, results are stored in [mdcstream-wrapper/results]
+By default, results are stored in [mdcstream-wrapper/results]
     
-	The previous command tests all algorithms together with all datasets. To obtain results and time performances separately, use instead:
+The previous command tests all algorithms together with all datasets. To obtain results and time performances separately, use instead:
 > $ time java -jar outlier-detector.jar config????.xml 
 
-	where "????" stands for the specific algorithm ("MCOD", "SimpleCOD", "AbstractC", "ExactStorm", and "AproxStorm")
+where "????" stands for the specific algorithm ("MCOD", "SimpleCOD", "AbstractC", "ExactStorm", and "AproxStorm")
 
-###Calculating performances 
+**Calculating performances**
 
 1. Go to [py_metrics]
 2. From the terminal, execute: 
 > $ python3 extract_performances.py
-
