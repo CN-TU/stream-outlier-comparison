@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<outlierDetection>
+	<pathToData>../mdcstream-wrapper/dataRoot/</pathToData>
+	<pathToResult>../mdcstream-wrapper/results/</pathToResult>
+
+	<algorithms>		
+		<algorithm id="exactSTORM">
+			<k>10</k>
+			<radius>0.5</radius>
+			<windowSize>1000</windowSize>
+			<queryFreq>100</queryFreq>
+		</algorithm>
+	</algorithms>
+
+</outlierDetection>
+
+
+
