@@ -34,7 +34,7 @@ Datasets are stored in [mdcstream-wrapper/dataRoot]
 2. From the terminal, execute:
 > java -jar outlier-detector.jar config.xml
     
-By default, results are stored in [mdcstream-wrapper/results]
+By default, results are stored in [mdcstream-wrapper/results] (take it easy, experiments take a good while, approx. one day in an average computer). 
     
 The previous command tests all algorithms together with all datasets. To obtain results and time performances separately, use instead:
 > time java -jar outlier-detector.jar config????.xml 
@@ -46,3 +46,7 @@ where "????" stands for the specific algorithm ("MCOD", "SimpleCOD", "AbstractC"
 1. Go to [py_metrics]
 2. From the terminal, execute: 
 > python3 extract_performances.py
+
+**Final notes**
+
+Experiments were developed and tested with MATLAB R2018a, Python 3.7.3, and Java SE 8. The MOA wrapper does not work with more recent versions of Java (9/10/11) due to issues with JAXB API classes. We are currently fixing this.
