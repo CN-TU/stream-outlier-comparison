@@ -37,9 +37,9 @@ Datasets are stored in [mdcstream-wrapper/dataRoot]
 By default, results are stored in [mdcstream-wrapper/results] (take it easy, experiments take a good while, approx. one day depending on the machine). 
     
 The previous command tests all algorithms together with all datasets. To obtain results and time performances separately, use instead:
-> time java -jar outlier-detector.jar config&lt;derp>name].xml 
+> time java -jar outlier-detector.jar config&lt;name>.xml 
 
-where [name] stands for the specific algorithm ("MCOD", "SimpleCOD", "AbstractC", "ExactStorm", and "AproxStorm")
+where &lt;name> stands for the specific algorithm ("MCOD", "SimpleCOD", "AbstractC", "ExactStorm", and "AproxStorm")
 
 **Calculating performances**
 
