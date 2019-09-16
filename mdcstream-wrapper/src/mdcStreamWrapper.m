@@ -28,12 +28,12 @@
 
 function [dataOut, configOut] = mdcStreamWrapper(configIn)
 addpath(genpath('utilities'));
-addpath(genpath('../../mdcgen-matlab/config_build/src/'));
-addpath(genpath('../../mdcgen-matlab/mdcgen/src'));
-addpath(genpath('../../mdcgen-matlab/extra_tools'));
-addpath(genpath('../streamgen/config_build/src'));
-addpath(genpath('../streamgen/streamgen/src'));
-addpath(genpath('../streamgen/display'));
+addpath(genpath('../mdcgen-matlab-master/config_build/src/'));
+addpath(genpath('../mdcgen-matlab-master/mdcgen/src'));
+addpath(genpath('../mdcgen-matlab-master/extra_tools'));
+addpath(genpath('../mdcstream-matlab-master/config_build/src'));
+addpath(genpath('../mdcstream-matlab-master/mdcstream/src'));
+addpath(genpath('../mdcstream-matlab-master/display'));
 
 % ---- initialize seed
 
