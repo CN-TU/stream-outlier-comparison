@@ -79,6 +79,7 @@ for iScenario = 1 : size(p.scenarioName, 2)
     mdc.space             = p.space{iScenario};
     mdc.movingClusters    = p.movingClusters{iScenario};
     mdc.overlap           = p.overlap{iScenario};
+    mdc.nDatapoints       = p.nDatapoints;
     save(strcat(scenarioFolder, "/", p.scenarioName{iScenario}, "_params", ".mat"), 'mdc');
     
     for jDataSet = 1 : p.nOfDataSets{iScenario}

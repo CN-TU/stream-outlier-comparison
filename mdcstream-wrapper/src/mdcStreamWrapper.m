@@ -50,8 +50,9 @@ rng(seed);
 
 
 % ---- nDataPoints
-CONST = constants('nDataPoints');
-nTotalPoints = randi([CONST.MIN_NPOINTS CONST.MAX_NPOINTS]);
+%CONST = constants('nDataPoints');
+%nTotalPoints = randi([CONST.MIN_NPOINTS CONST.MAX_NPOINTS]);
+nTotalPoints = config.nDatapoints;
 
 % ---- Dimensions
 dimensions = setDimensions(config.dimensions);
